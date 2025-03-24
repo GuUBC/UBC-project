@@ -1,0 +1,118 @@
+/* Estilo básico para o site */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+/* Camada de fundo borrado */
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('imagens/massagem.jpg'); /* Substitua com o caminho correto da imagem */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    filter: blur(8px); /* Aplica o desfoque à imagem de fundo */
+    z-index: -1; /* Garante que o fundo fique atrás do conteúdo */
+}
+
+/* O conteúdo do site */
+.content {
+    position: relative;
+    z-index: 1;
+    color: #333;
+    padding: 20px;
+}
+
+/* Título com fundo artístico */
+header {
+    background: linear-gradient(135deg, rgba(255, 182, 193, 0.9), rgba(255, 105, 180, 0.8)); /* Gradiente suave em tons de rosa claro */
+    text-align: center;
+    padding: 60px 30px; /* Mais espaço ao redor do título */
+    color: white;
+    border-radius: 20px; /* Bordas arredondadas para suavizar */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Sombra suave no fundo */
+    margin: 20px auto;
+    width: 80%; /* Largura controlada */
+    backdrop-filter: blur(5px); /* Efeito de desfoque no fundo */
+    font-family: 'Dancing Script', cursive; /* Fonte relaxante, manuscrita */
+}
+
+h1 {
+    font-size: 3.5em; /* Tamanho maior para destacar o título */
+    margin: 0;
+    text-shadow: 2px 2px 15px rgba(255, 255, 255, 0.6); /* Sombra suave e difusa no texto */
+    font-weight: normal; /* Título sem exagero */
+    letter-spacing: 1px; /* Aumenta o espaçamento entre as letras */
+    line-height: 1.3; /* Maior espaçamento entre as linhas para dar leveza */
+}
+
+#intro {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco com transparência */
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+}
+
+#perguntas {
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco com transparência */
+    padding: 20px;
+    margin: 20px auto;
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #FFB6C1; /* Rosa clarinho */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 1.1em;
+    margin: 10px 0 5px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+input[type="submit"] {
+    background-color: #FFB6C1; /* Rosa clarinho */
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: #FF69B4; /* Rosa um pouco mais forte quando o mouse passar */
+}
+
+footer {
+     background-color: rgba(255, 182, 193, 0.6); /* Rosa clarinho com 60% de opacidade */
+    text-align: center;
+    padding: 1px 15px; /* Reduzindo o padding para 1px para altura mínima */
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 0.7em; /* Diminuindo ainda mais a fonte */
+}
